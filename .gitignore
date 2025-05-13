@@ -1,0 +1,16 @@
+*.pth
+*.pkl
+*.npz
+*.txt
+*.npy
+*.pyc
+*.aux
+*.log
+*.out
+*.gz
+*.synctex
+/vad/wavs/dev
+/vad/wavs/First_10_labels
+/vad/wavs/First_10_wavs
+/vad/wavs/test
+/vad/wavs/train

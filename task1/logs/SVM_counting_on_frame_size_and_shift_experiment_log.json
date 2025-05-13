@@ -1,0 +1,330 @@
+{
+    "timestamp": "2025-04-25 12:18:42",
+    "Feature_Args": "----------Feature Args----------",
+    "frame_length": 320,
+    "frame_step": 80,
+    "num_subbands": 6,
+    "alpha": 0.97,
+    "smooth": 1,
+    "sampling_rate": 16000,
+    "smooth_type": "medfilt",
+    "window": "hanning",
+    "Performance": "----------Performance----------",
+    "accuracy": 0.8879598424413065,
+    "auc": 0.9376463307940551,
+    "eer": 0.11979620275213378,
+    "precision": 0.929993923083601,
+    "recall": 0.9329907681588573,
+    "f1_score": 0.9314899352202078,
+    "confusion_matrix": [
+        [
+            35524,
+            16128
+        ],
+        [
+            15388,
+            214252
+        ]
+    ],
+    "Args": "----------SVM Args----------",
+    "kernel": "linear",
+    "C": 0.5,
+    "max_iter": 10000
+}
+{
+    "timestamp": "2025-04-25 12:18:45",
+    "Feature_Args": "----------Feature Args----------",
+    "frame_length": 512,
+    "frame_step": 128,
+    "num_subbands": 6,
+    "alpha": 0.97,
+    "smooth": 1,
+    "sampling_rate": 16000,
+    "smooth_type": "medfilt",
+    "window": "hanning",
+    "Performance": "----------Performance----------",
+    "accuracy": 0.8937173877170121,
+    "auc": 0.9413263966658056,
+    "eer": 0.11698648817889595,
+    "precision": 0.9348527632109722,
+    "recall": 0.9352170101443024,
+    "f1_score": 0.9350348512041404,
+    "confusion_matrix": [
+        [
+            22646,
+            9367
+        ],
+        [
+            9311,
+            134415
+        ]
+    ],
+    "Args": "----------SVM Args----------",
+    "kernel": "linear",
+    "C": 0.5,
+    "max_iter": 10000
+}
+{
+    "timestamp": "2025-04-25 12:18:46",
+    "Feature_Args": "----------Feature Args----------",
+    "frame_length": 1024,
+    "frame_step": 256,
+    "num_subbands": 6,
+    "alpha": 0.97,
+    "smooth": 1,
+    "sampling_rate": 16000,
+    "smooth_type": "medfilt",
+    "window": "hanning",
+    "Performance": "----------Performance----------",
+    "accuracy": 0.9107309734916691,
+    "auc": 0.9534184585564264,
+    "eer": 0.10063795408959215,
+    "precision": 0.9486147155783125,
+    "recall": 0.9419155337642077,
+    "f1_score": 0.9452532552401853,
+    "confusion_matrix": [
+        [
+            12291,
+            3663
+        ],
+        [
+            4170,
+            67622
+        ]
+    ],
+    "Args": "----------SVM Args----------",
+    "kernel": "linear",
+    "C": 0.5,
+    "max_iter": 10000
+}
+{
+    "timestamp": "2025-04-25 12:18:46",
+    "Feature_Args": "----------Feature Args----------",
+    "frame_length": 2048,
+    "frame_step": 512,
+    "num_subbands": 6,
+    "alpha": 0.97,
+    "smooth": 1,
+    "sampling_rate": 16000,
+    "smooth_type": "medfilt",
+    "window": "hanning",
+    "Performance": "----------Performance----------",
+    "accuracy": 0.9356984478935698,
+    "auc": 0.9698394627582771,
+    "eer": 0.07801931694825619,
+    "precision": 0.966736201161414,
+    "recall": 0.9545467197372449,
+    "f1_score": 0.9606027926779737,
+    "confusion_matrix": [
+        [
+            6640,
+            1180
+        ],
+        [
+            1633,
+            34294
+        ]
+    ],
+    "Args": "----------SVM Args----------",
+    "kernel": "linear",
+    "C": 0.5,
+    "max_iter": 10000
+}
+{
+    "timestamp": "2025-04-25 12:18:46",
+    "Feature_Args": "----------Feature Args----------",
+    "frame_length": 4096,
+    "frame_step": 1024,
+    "num_subbands": 6,
+    "alpha": 0.97,
+    "smooth": 1,
+    "sampling_rate": 16000,
+    "smooth_type": "medfilt",
+    "window": "hanning",
+    "Performance": "----------Performance----------",
+    "accuracy": 0.9480411991907302,
+    "auc": 0.976525765908157,
+    "eer": 0.06902149574563368,
+    "precision": 0.9715396753832282,
+    "recall": 0.9650134348410211,
+    "f1_score": 0.9682655583015053,
+    "confusion_matrix": [
+        [
+            3379,
+            505
+        ],
+        [
+            625,
+            17239
+        ]
+    ],
+    "Args": "----------SVM Args----------",
+    "kernel": "linear",
+    "C": 0.5,
+    "max_iter": 10000
+}
+{
+    "timestamp": "2025-04-25 12:18:51",
+    "Feature_Args": "----------Feature Args----------",
+    "frame_length": 320,
+    "frame_step": 160,
+    "num_subbands": 6,
+    "alpha": 0.97,
+    "smooth": 1,
+    "sampling_rate": 16000,
+    "smooth_type": "medfilt",
+    "window": "hanning",
+    "Performance": "----------Performance----------",
+    "accuracy": 0.8889994314951677,
+    "auc": 0.9376043607811372,
+    "eer": 0.11961049781295563,
+    "precision": 0.9309100662778825,
+    "recall": 0.9337377629660487,
+    "f1_score": 0.9323217705526045,
+    "confusion_matrix": [
+        [
+            17511,
+            7985
+        ],
+        [
+            7635,
+            107589
+        ]
+    ],
+    "Args": "----------SVM Args----------",
+    "kernel": "linear",
+    "C": 0.5,
+    "max_iter": 10000
+}
+{
+    "timestamp": "2025-04-25 12:18:52",
+    "Feature_Args": "----------Feature Args----------",
+    "frame_length": 512,
+    "frame_step": 256,
+    "num_subbands": 6,
+    "alpha": 0.97,
+    "smooth": 1,
+    "sampling_rate": 16000,
+    "smooth_type": "medfilt",
+    "window": "hanning",
+    "Performance": "----------Performance----------",
+    "accuracy": 0.8932526777795465,
+    "auc": 0.9404662734049268,
+    "eer": 0.11895439408084496,
+    "precision": 0.9343155139041678,
+    "recall": 0.9349143756879903,
+    "f1_score": 0.9346148488647444,
+    "confusion_matrix": [
+        [
+            11462,
+            4717
+        ],
+        [
+            4671,
+            67096
+        ]
+    ],
+    "Args": "----------SVM Args----------",
+    "kernel": "linear",
+    "C": 0.5,
+    "max_iter": 10000
+}
+{
+    "timestamp": "2025-04-25 12:18:52",
+    "Feature_Args": "----------Feature Args----------",
+    "frame_length": 1024,
+    "frame_step": 512,
+    "num_subbands": 6,
+    "alpha": 0.97,
+    "smooth": 1,
+    "sampling_rate": 16000,
+    "smooth_type": "medfilt",
+    "window": "hanning",
+    "Performance": "----------Performance----------",
+    "accuracy": 0.9100507429403599,
+    "auc": 0.9543375384166118,
+    "eer": 0.0989869024963618,
+    "precision": 0.9478312336179927,
+    "recall": 0.9411731781036606,
+    "f1_score": 0.9444904722452361,
+    "confusion_matrix": [
+        [
+            6364,
+            1851
+        ],
+        [
+            2102,
+            33630
+        ]
+    ],
+    "Args": "----------SVM Args----------",
+    "kernel": "linear",
+    "C": 0.5,
+    "max_iter": 10000
+}
+{
+    "timestamp": "2025-04-25 12:18:52",
+    "Feature_Args": "----------Feature Args----------",
+    "frame_length": 2048,
+    "frame_step": 1024,
+    "num_subbands": 6,
+    "alpha": 0.97,
+    "smooth": 1,
+    "sampling_rate": 16000,
+    "smooth_type": "medfilt",
+    "window": "hanning",
+    "Performance": "----------Performance----------",
+    "accuracy": 0.9346181884454164,
+    "auc": 0.9693431654022728,
+    "eer": 0.08406343573250527,
+    "precision": 0.9665523638203384,
+    "recall": 0.9534213152933348,
+    "f1_score": 0.9599419367445496,
+    "confusion_matrix": [
+        [
+            3319,
+            595
+        ],
+        [
+            840,
+            17194
+        ]
+    ],
+    "Args": "----------SVM Args----------",
+    "kernel": "linear",
+    "C": 0.5,
+    "max_iter": 10000
+}
+{
+    "timestamp": "2025-04-25 12:18:52",
+    "Feature_Args": "----------Feature Args----------",
+    "frame_length": 4096,
+    "frame_step": 2048,
+    "num_subbands": 6,
+    "alpha": 0.97,
+    "smooth": 1,
+    "sampling_rate": 16000,
+    "smooth_type": "medfilt",
+    "window": "hanning",
+    "Performance": "----------Performance----------",
+    "accuracy": 0.9478538812785389,
+    "auc": 0.9770215264792693,
+    "eer": 0.07005019520356943,
+    "precision": 0.9700940860215054,
+    "recall": 0.966090351366425,
+    "f1_score": 0.9680880791370927,
+    "confusion_matrix": [
+        [
+            1718,
+            267
+        ],
+        [
+            304,
+            8661
+        ]
+    ],
+    "Args": "----------SVM Args----------",
+    "kernel": "linear",
+    "C": 0.5,
+    "max_iter": 10000
+}

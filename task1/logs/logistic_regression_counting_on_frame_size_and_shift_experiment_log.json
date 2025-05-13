@@ -1,0 +1,330 @@
+{
+    "timestamp": "2025-04-25 12:16:22",
+    "Feature_Args": "----------Feature Args----------",
+    "frame_length": 320,
+    "frame_step": 80,
+    "num_subbands": 6,
+    "alpha": 0.97,
+    "smooth": 1,
+    "sampling_rate": 16000,
+    "smooth_type": "medfilt",
+    "window": "hanning",
+    "Performance": "----------Performance----------",
+    "accuracy": 0.8951658774511895,
+    "auc": 0.9407432715176345,
+    "eer": 0.12059753144387492,
+    "precision": 0.9370733323452226,
+    "recall": 0.9345515253485672,
+    "f1_score": 0.935810729919222,
+    "confusion_matrix": [
+        [
+            36844,
+            14435
+        ],
+        [
+            15054,
+            214959
+        ]
+    ],
+    "Args": "----------Logistic Regression Args----------",
+    "C": 1,
+    "max_iter": 5000,
+    "penalty": "l2"
+}
+{
+    "timestamp": "2025-04-25 12:16:24",
+    "Feature_Args": "----------Feature Args----------",
+    "frame_length": 512,
+    "frame_step": 128,
+    "num_subbands": 6,
+    "alpha": 0.97,
+    "smooth": 1,
+    "sampling_rate": 16000,
+    "smooth_type": "medfilt",
+    "window": "hanning",
+    "Performance": "----------Performance----------",
+    "accuracy": 0.9007960668946563,
+    "auc": 0.9457190426438327,
+    "eer": 0.11343433427920045,
+    "precision": 0.9432362646253861,
+    "recall": 0.9347003088593121,
+    "f1_score": 0.9389488871146223,
+    "confusion_matrix": [
+        [
+            24240,
+            8068
+        ],
+        [
+            9366,
+            134065
+        ]
+    ],
+    "Args": "----------Logistic Regression Args----------",
+    "C": 1,
+    "max_iter": 5000,
+    "penalty": "l2"
+}
+{
+    "timestamp": "2025-04-25 12:16:25",
+    "Feature_Args": "----------Feature Args----------",
+    "frame_length": 1024,
+    "frame_step": 256,
+    "num_subbands": 6,
+    "alpha": 0.97,
+    "smooth": 1,
+    "sampling_rate": 16000,
+    "smooth_type": "medfilt",
+    "window": "hanning",
+    "Performance": "----------Performance----------",
+    "accuracy": 0.9173751510040343,
+    "auc": 0.9588715238416964,
+    "eer": 0.09739609414121182,
+    "precision": 0.9543805882022156,
+    "recall": 0.9442914371557336,
+    "f1_score": 0.9493092068464034,
+    "confusion_matrix": [
+        [
+            12609,
+            3245
+        ],
+        [
+            4005,
+            67887
+        ]
+    ],
+    "Args": "----------Logistic Regression Args----------",
+    "C": 1,
+    "max_iter": 5000,
+    "penalty": "l2"
+}
+{
+    "timestamp": "2025-04-25 12:16:25",
+    "Feature_Args": "----------Feature Args----------",
+    "frame_length": 2048,
+    "frame_step": 512,
+    "num_subbands": 6,
+    "alpha": 0.97,
+    "smooth": 1,
+    "sampling_rate": 16000,
+    "smooth_type": "medfilt",
+    "window": "hanning",
+    "Performance": "----------Performance----------",
+    "accuracy": 0.9405444944796214,
+    "auc": 0.9733594155916424,
+    "eer": 0.07627425326392562,
+    "precision": 0.968716592584257,
+    "recall": 0.9585502324416112,
+    "f1_score": 0.9636065986651555,
+    "confusion_matrix": [
+        [
+            6712,
+            1112
+        ],
+        [
+            1489,
+            34434
+        ]
+    ],
+    "Args": "----------Logistic Regression Args----------",
+    "C": 1,
+    "max_iter": 5000,
+    "penalty": "l2"
+}
+{
+    "timestamp": "2025-04-25 12:16:25",
+    "Feature_Args": "----------Feature Args----------",
+    "frame_length": 4096,
+    "frame_step": 1024,
+    "num_subbands": 6,
+    "alpha": 0.97,
+    "smooth": 1,
+    "sampling_rate": 16000,
+    "smooth_type": "medfilt",
+    "window": "hanning",
+    "Performance": "----------Performance----------",
+    "accuracy": 0.9460180246459444,
+    "auc": 0.9762991801904477,
+    "eer": 0.0757803371724253,
+    "precision": 0.9697444214529388,
+    "recall": 0.9647805040894676,
+    "f1_score": 0.9672560941596474,
+    "confusion_matrix": [
+        [
+            3234,
+            541
+        ],
+        [
+            633,
+            17340
+        ]
+    ],
+    "Args": "----------Logistic Regression Args----------",
+    "C": 1,
+    "max_iter": 5000,
+    "penalty": "l2"
+}
+{
+    "timestamp": "2025-04-25 12:16:27",
+    "Feature_Args": "----------Feature Args----------",
+    "frame_length": 320,
+    "frame_step": 160,
+    "num_subbands": 6,
+    "alpha": 0.97,
+    "smooth": 1,
+    "sampling_rate": 16000,
+    "smooth_type": "medfilt",
+    "window": "hanning",
+    "Performance": "----------Performance----------",
+    "accuracy": 0.8945849914724275,
+    "auc": 0.9405026809803768,
+    "eer": 0.1204426122803211,
+    "precision": 0.9368586870436288,
+    "recall": 0.9342243436754176,
+    "f1_score": 0.9355396608814301,
+    "confusion_matrix": [
+        [
+            18240,
+            7255
+        ],
+        [
+            7579,
+            107646
+        ]
+    ],
+    "Args": "----------Logistic Regression Args----------",
+    "C": 1,
+    "max_iter": 5000,
+    "penalty": "l2"
+}
+{
+    "timestamp": "2025-04-25 12:16:28",
+    "Feature_Args": "----------Feature Args----------",
+    "frame_length": 512,
+    "frame_step": 256,
+    "num_subbands": 6,
+    "alpha": 0.97,
+    "smooth": 1,
+    "sampling_rate": 16000,
+    "smooth_type": "medfilt",
+    "window": "hanning",
+    "Performance": "----------Performance----------",
+    "accuracy": 0.9020307916221317,
+    "auc": 0.9460411188053808,
+    "eer": 0.11232192440246132,
+    "precision": 0.9435541736426692,
+    "recall": 0.9357602310622445,
+    "f1_score": 0.9396410407296877,
+    "confusion_matrix": [
+        [
+            12265,
+            4012
+        ],
+        [
+            4604,
+            67065
+        ]
+    ],
+    "Args": "----------Logistic Regression Args----------",
+    "C": 1,
+    "max_iter": 5000,
+    "penalty": "l2"
+}
+{
+    "timestamp": "2025-04-25 12:16:28",
+    "Feature_Args": "----------Feature Args----------",
+    "frame_length": 1024,
+    "frame_step": 512,
+    "num_subbands": 6,
+    "alpha": 0.97,
+    "smooth": 1,
+    "sampling_rate": 16000,
+    "smooth_type": "medfilt",
+    "window": "hanning",
+    "Performance": "----------Performance----------",
+    "accuracy": 0.9176052972899174,
+    "auc": 0.959065996843711,
+    "eer": 0.09684804154219827,
+    "precision": 0.9536207382361228,
+    "recall": 0.9448616655964711,
+    "f1_score": 0.9492209959472157,
+    "confusion_matrix": [
+        [
+            6482,
+            1646
+        ],
+        [
+            1975,
+            33844
+        ]
+    ],
+    "Args": "----------Logistic Regression Args----------",
+    "C": 1,
+    "max_iter": 5000,
+    "penalty": "l2"
+}
+{
+    "timestamp": "2025-04-25 12:16:28",
+    "Feature_Args": "----------Feature Args----------",
+    "frame_length": 2048,
+    "frame_step": 1024,
+    "num_subbands": 6,
+    "alpha": 0.97,
+    "smooth": 1,
+    "sampling_rate": 16000,
+    "smooth_type": "medfilt",
+    "window": "hanning",
+    "Performance": "----------Performance----------",
+    "accuracy": 0.9352560597776562,
+    "auc": 0.9705097672813768,
+    "eer": 0.08092388568871987,
+    "precision": 0.9649192181674388,
+    "recall": 0.9552597729433477,
+    "f1_score": 0.9600651996740016,
+    "confusion_matrix": [
+        [
+            3446,
+            621
+        ],
+        [
+            800,
+            17081
+        ]
+    ],
+    "Args": "----------Logistic Regression Args----------",
+    "C": 1,
+    "max_iter": 5000,
+    "penalty": "l2"
+}
+{
+    "timestamp": "2025-04-25 12:16:28",
+    "Feature_Args": "----------Feature Args----------",
+    "frame_length": 4096,
+    "frame_step": 2048,
+    "num_subbands": 6,
+    "alpha": 0.97,
+    "smooth": 1,
+    "sampling_rate": 16000,
+    "smooth_type": "medfilt",
+    "window": "hanning",
+    "Performance": "----------Performance----------",
+    "accuracy": 0.9489497716894977,
+    "auc": 0.9757320650988783,
+    "eer": 0.07189615000554754,
+    "precision": 0.971868720696584,
+    "recall": 0.9659380894263841,
+    "f1_score": 0.9688943297534918,
+    "confusion_matrix": [
+        [
+            1685,
+            252
+        ],
+        [
+            307,
+            8706
+        ]
+    ],
+    "Args": "----------Logistic Regression Args----------",
+    "C": 1,
+    "max_iter": 5000,
+    "penalty": "l2"
+}
