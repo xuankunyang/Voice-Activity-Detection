@@ -169,7 +169,7 @@ Models were tested with frame lengths (320–4096) and shifts (80–2048). DNN o
 | Linear SVM | 0.8937| 0.9413| 0.1170| 0.9349| 0.9352 |0.9350|
 
 ### 7. Visualization on time domain division
-I restored the framed labels back to the time domain and visualized them.
+I restored the framed labels back to the time domain and visualized them as follows:
 ![](vad\latex\figs\visualize_results_DNN.png)
 
 
