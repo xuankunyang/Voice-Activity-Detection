@@ -129,7 +129,6 @@ Models were tested with frame lengths (320–4096) and shifts (80–2048). DNN o
 I restored the framed labels back to the time domain and visualized them as follows:
 ![](vad\latex\figs\visualize_results_DNN.png)
 
-
 ## Usage
 1. Clone the repository:
    ```bash
