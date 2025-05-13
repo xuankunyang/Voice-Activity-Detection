@@ -168,7 +168,9 @@ Models were tested with frame lengths (320–4096) and shifts (80–2048). DNN o
 | Logistic Regression | 0.9457 | 0.1134 | 0.9432   | 0.9347    | 0.9389 | 0.9368   |
 | Linear SVM | 0.8937| 0.9413| 0.1170| 0.9349| 0.9352 |0.9350|
 
-
+### 7. Visualization on time domain division
+I restored the framed labels back to the time domain and visualized them.
+![](vad\latex\figs\visualize_results_DNN.png)
 
 
 ## Usage
@@ -180,7 +182,7 @@ Models were tested with frame lengths (320–4096) and shifts (80–2048). DNN o
    ```bash
    pip install -r requirements.txt
    ```
-3. Extract the features first and train a binary classifier, predict, time-domain restoration, visulize the time splits. 
+3. Extract the features first and train a binary classifier, predict, time-domain restoration, visulize the time division. 
 Considering the space limit, **I couldn't put my pre-trained models here**, but its not difficult to implement all above using this frame.
 4. Explore visualizations in `vad/latex/figs/` and the report.
 
