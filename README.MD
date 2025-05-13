@@ -18,123 +18,83 @@ I conducted extensive experiments comparing frame division methods (frame length
 ## Methodology
 
 ### 1. Preprocessing
-Pre-emphasis enhances high-frequency components to reduce spectral leakage:
-$$
-y[n] = x[n] - \alpha x[n-1]
-$$
-where $x[n]$ is the input signal, $y[n]$ is the output, and $\alpha$ (typically 0.95–0.97) controls emphasis strength.
+Pre-emphasis enhances high-frequency components to reduce spectral leakage.
 
-- **Pre-emphasis Impact**: Effect of pre-emphasis with varying $\alpha$.
+- **Pre-emphasis Impact**: 
+
+  Effect of pre-emphasis with varying $\alpha$
+
   ![](/vad/latex/figs/counting_on_pre_emphasis.png)
 
 ### 2. Framing
-The signal is divided into overlapping frames. For signal length $N$, frame length $L$, and frame shift $S$, the number of frames $n_{\text{frames}}$ is:
-- Without zero-padding (floor):
-  $$
-  n_{\text{frames}} = \left\lfloor \frac{N - L}{S} \right\rfloor + 1
-  $$
-- With zero-padding (ceiling):
-  $$
-  n_{\text{frames}} = \left\lceil \frac{N - L}{S} \right\rceil + 1
-  $$
-Zero-padding length:
-$$
-n_{\text{paddle}} = (n_{\text{frames}} - 1) \cdot S + L - N
-$$
+The signal is divided into overlapping frames.
 
 ### 3. Windowing
-A window function (e.g., Hamming) is applied to each frame:
-$$
-x_i^{\text{windowed}}[n] = x_i[n] \cdot w[n], \quad 0 \leq n < L
-$$
-Hamming window:
-$$
-w[n] = 0.54 - 0.46 \cos\left(\frac{2\pi n}{L-1}\right)
-$$
+A window function (e.g., Hamming) is applied to each frame.
 
-- **Window Type Comparison**: Impact of window functions (e.g., Hamming, Hanning).
+- **Window Type Comparison**: 
+
+  Impact of window functions (e.g., Hamming, Hanning)
+
   ![](/vad/latex/figs/counting_on_windows.png)
 
 ### 4. Feature Extraction
 Extracted features (total dimension: 69) include:
 
 - **Short-Time Energy** (dimension: 1):
-  Measures frame energy, indicating loudness:
-  $$
-  E = \sum_{i=0}^{L-1} s_i^2
-  $$
-  where $s_i$ is the $i$-th sample in the frame, and $L$ is the frame length.
 
-  Frame-level energy plots.
+  Measures frame energy, indicating loudness.
+
+  Frame-level energy plots
+
   ![](/vad/latex/figs/energies.png)
 
 - **Short-Time Zero-Crossing Rate** (dimension: 1):
-  Counts zero crossings to distinguish voiced/unvoiced speech:
-  $$
-  Z = \frac{1}{2} \sum_{i=0}^{L-1} \left| \text{sgn}(s_i) - \text{sgn}(s_{i-1}) \right|, \quad \text{sgn}(x) = \begin{cases} 1, & x \geq 0 \\ 0, & x < 0 \end{cases}
-  $$
 
-  Visualizing zero-crossing patterns.
+  Counts zero crossings to distinguish voiced/unvoiced speech.
+
+  Visualizing zero-crossing patterns
+
   ![](/vad/latex/figs/ZCR.png)
 
 - **Fundamental Frequency (Pitch)** (dimension: 1):
-  Estimated via autocorrelation, representing the fundamental frequency:
-  $$
-  R(\tau) = \sum_{n=0}^{L-1-\tau} s[n] s[n+\tau], \quad f_0 = \frac{f_s}{\tau_{\text{max}}}
-  $$
-  where $R(\tau)$ is the autocorrelation, $\tau_{\text{max}}$ is the lag maximizing $R(\tau)$, $f_s$ is the sampling frequency (16 kHz), and $s[n]$ is the frame signal.
 
-  And I have tried many smooth methods, see it in my report.
+  Estimated via autocorrelation, representing the fundamental frequency. And I have tried many smooth methods, see it in my report.
 
 - **Spectral Centroid** (dimension: 1):
-  Indicates the spectral "center of mass":
-  $$
-  C = \frac{\sum_{k=0}^{K-1} f_k |S(k)|}{\sum_{k=0}^{K-1} |S(k)|}
-  $$
-  where $S(k)$ is the Fourier transform magnitude at bin $k$, $f_k$ is the corresponding frequency, and $K$ is the number of bins.
+
+  Indicates the spectral "center of mass"
 
   ![](/vad/latex/figs/spectral_mean.png)
 
 - **Sub-band Energies** (dimension: 6):
-  Energy in 6 frequency sub-bands:
-  $$
-  E_m = \sum_{k \in B_m} |S(k)|^2, \quad m = 1, 2, \ldots, 6
-  $$
-  where $B_m$ is the set of frequency bins in the $m$-th sub-band.
+
+  Energy in 6 frequency sub-bands
+
   ![](vad\latex\figs\subband_energies.png)
 
 - **Filter Banks (FBanks)** (dimension: 23):
-  Mel-scale filter bank energies:
-  $$
-  E_m = \sum_{k=0}^{K-1} |S(k)|^2 H_m(k), \quad m = 1, 2, \ldots, 23
-  $$
-  where $H_m(k)$ is the $m$-th mel filter’s frequency response, and the mel scale is:
-  $$
-  \text{mel}(f) = 2595 \log_{10}\left(1 + \frac{f}{700}\right)
-  $$
+
+  Mel-scale filter bank energies
+
   ![](vad\latex\figs\visualize_FBank.png)
 
 - **Mel-Frequency Cepstral Coefficients (MFCCs)** (dimension: 12):
-  Cepstral coefficients from mel filter banks:
-  $$
-  c_n = \sum_{m=1}^{M} \log E_m \cos\left( n \left(m - 0.5\right) \frac{\pi}{M} \right), \quad n = 1, 2, \ldots, 12
-  $$
-  where $E_m = \sum_{k=0}^{K-1} |S(k)|^2 H_m(k)$ is the $m$-th filter bank energy, and $M = 23$.
+
+  Cepstral coefficients from mel filter banks
+
   ![](vad\latex\figs\visualize_MFCC.pnG)
 
 - **Delta MFCCs** (dimension: 12):
-  First-order differences of MFCCs:
-  $$
-  \Delta c_n(t) = \frac{\sum_{d=1}^D d \left( c_n(t shap-d) - c_n(t-d) \right)}{2 \sum_{d=1}^D d^2}, \quad n = 1, 2, \ldots, 12
-  $$
-  where $c_n(t)$ is the $n$-th MFCC at frame $t$, and $D$ is the window size (typically 2–3).
+
+  First-order differences of MFCCs
+
   ![](vad\latex\figs\visualize_Delta_MFCC.png)
 
 - **Delta-Delta MFCCs** (dimension: 12):
-  Second-order differences:
-  $$
-  \Delta^2 c_n(t) = \frac{\sum_{d=1}^D d \left( \Delta c_n(t+d) - \Delta c_n(t-d) \right)}{2 \sum_{d=1}^D d^2}, \quad n = 1, 2, \ldots, 12
-  $$
+
+  Second-order differences
+  
   ![](vad\latex\figs\visualize_Delta_of_Delta_MFCC.png)
 
 ### 5. Classification Models
@@ -152,10 +112,7 @@ models I trained trained:
 
 - **Gaussian Mixture Model (GMM)**:
   - Construct by myself
-  - Models classes as Gaussian mixtures:
-    $$
-    p(x) = \sum_{k=1}^K \pi_k \mathcal{N}(x | \mu_k, \Sigma_k)
-    $$
+  - Models classes as Gaussian mixtures
   - Trained with Expectation-Maximization.
   - Its performance is not so good, I will spare some time to figure it out.
 
