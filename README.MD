@@ -83,7 +83,7 @@ Extracted features (total dimension: 69) include:
 
   Cepstral coefficients from mel filter banks
 
-  ![](vad\latex\figs\visualize_MFCC.pnG)
+  ![](vad\latex\figs\visualize_MFCC.png)
 
 - **Delta MFCCs** (dimension: 12):
 
