@@ -1,5 +1,7 @@
 # Voice Activity Detection (VAD) Project
 
+🔗 For more details, please visit my blog [VAD](https://xuankunyang.github.io/post/vad/)
+
 🎯 **Voice Activity Detection (VAD)**, or voice endpoint detection, identifies time segments in an audio signal containing speech. This is a critical preprocessing step for automatic speech recognition (ASR) and voice wake-up systems. This project lays the groundwork for my upcoming ASR project 🤭.
 
 📈 **Workflow Overview**:
@@ -139,7 +141,7 @@ I restored the framed labels back to the time domain and visualized them as foll
    pip install -r requirements.txt
    ```
 3. Extract the features first and train a binary classifier, predict, time-domain restoration, visulize the time division. 
-Considering the space limit, **I couldn't put my pre-trained models here**, but its not difficult to implement all above using this frame.
+Considering the space limit, **I couldn't put my pre-trained models here**, but its not difficult to implement all above using this framework.
 4. Explore visualizations in `vad/latex/figs/` and the report.
 
 ## Contributing
