@@ -148,7 +148,7 @@ Considering the space limit, **I couldn't put my pre-trained models here**, but 
 Fork the repository, create a branch, and submit pull requests. For major changes, open an issue.
 
 ## License
-Licensed under the MIT License. See [LICENSE](https://mit-license.org/).
+Licensed under the MIT License. See [LICENSE](https://github.com/xuankunyang/Voice-Activity-Detection/blob/main/LICENSE).
 
 ## Contact
 Reach out via [email](kk-dao@sjtu.edu.cn) or GitHub issues.
